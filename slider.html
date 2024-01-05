@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Home page</title>
+   
+   <style>
+       
+       body{
+           margin: 0;
+           padding: 0;
+           background:white;
+       }
+       nav{
+           background-color: rgb(69, 95, 151);
+           color: #fff;
+           padding: 20px;
+       }
+       nav ul{
+           list-style-type: none;
+           margin: 0;
+           padding: 0;
+           text-align: center;
+       }
+       nav ul li{
+           display: inline-block;
+       }
+       nav ul li button{
+           background-color: transparent;
+           color: #fff;
+           text-decoration: none;
+           padding: 10px;
+           border: none;
+           outline: none;
+       }
+       nav ul li button:focus{
+           background-color: #fff;
+           color: black ;
+           border-radius: 15px;
+       }
+       nav ul li button:hover{
+           background-color: #fff;
+           color: black;
+           border-radius: 20px;
+       }
+       img{
+           background-color: transparent;
+           margin: 100px;
+           width: 300px;
+           height: 300px;
+           border: 2px solid black;
+           border-radius: 8pxpx;
+           border: none;
+           opacity: inherit;
+       }
+       .button{
+           background-color: green;
+           color: #ffffff;
+           display: flex;
+           width: 150px;
+           padding: 9px;
+           display: flex;
+           justify-content: center;
+           text-align: center; 
+           border-radius: 40px;
+          margin-left: 100PX;
+          margin-top:  -10px;
+       }
+       .button:hover{
+           background-color: rgb(76, 10, 228);
+           color: black;
+
+       }
+       .slider table{
+          width: 400vw; 
+          transition: 1s;
+       }     
+       .container{
+           width: 100vw;
+           overflow: hidden;
+       }
+       footer{
+        background-color: rgb(53, 33, 101);;
+        color:#fff;
+        height: 120px;
+       }
+
+       
+   </style>
+  
+</head>
+<body>
+ 
+   <div>
+    <nav>
+    <ul>
+               <li><button onclick="sliderr(0)">Clothes</button></li>
+               <li><button onclick="sliderr(1)">Shoes</button></li>
+               <li><button onclick="sliderr(2)">Pants</button></li>
+               <li><button onclick="sliderr(3)">Caps</button></li>
+    </ul>
+    </nav>
+   </div>
+   
+   <div class="container">
+       <div class="slider" id="slider">
+           <table id="table">
+               <tr>
+                <td><img class="img1" src="ff1.PNG" alt=""><button class="button" onclick="buttonn()">Buy Now</button></td>
+                <td><img class="img2" src="ff.PNG" alt=""><button class="button" onclick="buttonn()">Buy Now</button><br></td>
+                <td><img class="img3" src="ff2.jfif" alt=""><button class="button" onclick="buttonn()">Buy Now</button></td>
+
+            <td><img class="img1" src="Capture.PNG" alt=""><button class="button"onclick="buttonn()" >Buy Now</button></td>
+            <td><img class="img2" src="Capture1.PNG" alt=""><button class="button"onclick="buttonn()">Buy Now</button><br></td>
+            <td><img class="img3" src="Capture2.PNG" alt=""><button class="button" onclick="buttonn()">Buy Now</button></td>
+            
+            <td><img class="img1" src="nn1.PNG" alt=""><button class="button" onclick="buttonn()">Buy Now</button></td>
+            <td><img class="img2" src="nn2.PNG" alt=""><button class="button" onclick="buttonn()">Buy Now</button><br></td>
+            <td><img class="img3" src="nn4.PNG" alt=""><button class="button" onclick="buttonn()">Buy Now</button></td>
+
+            <td><img class="img1" src="tt.PNG" alt=""><button class="button" onclick="buttonn()">Buy Now</button></td>
+            <td><img class="img2" src="tt2.PNG" alt=""><button class="button" onclick="buttonn()">Buy Now</button><br></td>
+            <td><img class="img3" src="Cap1.jfif" alt=""><button class="button" onclick="buttonn()">Buy Now</button></td>
+
+      
+               </tr>
+           </table>
+       </div>
+   </div>
+
+   <script>
+    function buttonn()
+    {
+      window.location.href="sigin.html";
+    }
+       function sliderr(i){
+           document.getElementById('table').style.marginLeft = `${-100 * i}vw`;
+       }
+   </script>
+   <footer>
+    <p>
+        Branches:<br><br>           contacts :  <br><br>         Accounts:
+    </p>
+   </footer>
+</body>
+</html>
